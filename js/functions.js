@@ -21,6 +21,6 @@ const showNavbar = function() {
   } else if($(window).scrollTop() < headerHeight) {
     $('nav').parent().addClass('hidden-content');
     $('label.hamburger-menu').addClass('hidden-content');
-      $('#header-text').show()
-    }
+    $('#header-text').show()
+  }
 };
