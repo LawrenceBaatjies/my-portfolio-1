@@ -11,3 +11,16 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
   $('label.hamburguer-menu input').prop('checked', false);
 });
+
+const showNavbar = function() {
+  const headerHeight = $('header').height() - 70;
+  if ($(window).scrollTop() > headerHeight) {
+    $('nav').parent().removeClass('hidden-content');
+    $('label.hamburger-menu').removeClass('hidden-content');
+    $('#header-text').hide()
+  } else if($(window).scrollTop() < headerHeight) {
+    $('nav').parent().addClass('hidden-content');
+    $('label.hamburger-menu').addClass('hidden-content');
+      $('#header-text').show()
+    }
+};
