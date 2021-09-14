@@ -4,11 +4,12 @@
 <br />
 
 
-# Responsive Mobile first app with Html and CSS only. 
+# Responsive Mobile first portfolio app with Html and CSS javaScript . 
 # Always Open Source
 # Fork:
-# Clone
+# Clone:
 # Leave A follow or a Star.
+# Buy a coffee.
 <hr />
 
 📞Connect with me on:<br />
