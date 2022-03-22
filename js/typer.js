@@ -103,19 +103,19 @@ function TyperSetup() {
   for (let i = 0, e; e = elements[i++];) {
     typers[e.id] = new Typer(e);
   }
-  let elements = document.getElementsByClassName("typer-stop");
-  for (let i = 0, e; e = elements[i++];) {
+  let elements1 = document.getElementsByClassName("typer-stop");
+  for (let i = 0, e; e = elements1[i++];) {
     let owner = typers[e.dataset.owner];
     e.onclick = function(){owner.stop();};
   }
-  let elements = document.getElementsByClassName("typer-start");
-  for (let i = 0, e; e = elements[i++];) {
+  let elements2 = document.getElementsByClassName("typer-start");
+  for (let i = 0, e; e = elements2[i++];) {
     let owner = typers[e.dataset.owner];
     e.onclick = function(){owner.start();};
   }
 
-  let elements2 = document.getElementsByClassName("cursor");
-  for (let i = 0, e; e = elements2[i++];) {
+  let elements3 = document.getElementsByClassName("cursor");
+  for (let i = 0, e; e = elements3[i++];) {
     let t = new Cursor(e);
     t.owner = typers[e.dataset.owner];
     t.owner.cursor = t;
