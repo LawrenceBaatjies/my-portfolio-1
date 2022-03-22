@@ -89,7 +89,7 @@ p {
 .custom-hr {
   width: 70px;
   height: 4px;
-  background:#18da62;
+  background: #08f127;
   text-align: center;
   margin: 0 auto;
 }
@@ -102,7 +102,7 @@ header {
   font-family: 'Anonymous Pro', monospace;
   position: relative;
   top: 0;
-  color: rgb(217, 219, 216);
+  color: white;
   min-height: 100%;
 }
 
@@ -165,7 +165,6 @@ header .show-more {
   text-align: center;
   margin-top: 50%;
   animation: fadeInOut 1.5s linear;
- 
 }
 
 header .show-more a {
@@ -173,12 +172,12 @@ header .show-more a {
   padding: 10px;
   color: white;
   border: 1px solid white;
-  border-radius: 5px;
 }
 
 header .show-more a:hover {
   color: white;
-  border-color: #e60b0b;
+  border-color:#1bd095;
+  border-radius: 3px 7px;
   text-decoration: none;
 }
 
@@ -194,12 +193,11 @@ header .show-more a:hover {
     z-index: 9999;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px;
   }
+/* About navbar */
 
   nav {
-    
-    background: #aaabacf7;
+    background: #111111f7;
     height: 80px;
-    border-radius: 5px;
   }
 
   nav .logo {
@@ -222,17 +220,16 @@ header .show-more a:hover {
 
   nav ul li a {
     font-size: 20px;
-    color: #000;
+    color: rgb(250, 249, 249);
   }
 
   nav ul li a:hover {
     text-decoration: none;
-    color: #18da62;
-    
+    color: #4cf808;
   }
 
   nav ul li a:focus {
-    color:  #18da62;
+    color: #fd5f5f;
     text-decoration: none;
   }
 
@@ -259,7 +256,7 @@ header .show-more a:hover {
     z-index: 100;
     width: 60px;
     height: 60px;
-    background: #5ffdf5;
+    background: #79fd5f;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
@@ -401,14 +398,14 @@ header .show-more a:hover {
   margin-bottom: 20px;
   width: 300px;
   height: 7px;
-  background: #04f1a2;
+  background: #1bd095;
   float: left;
 }
 
 .bottom-hr {
   width: 300px;
   height: 7px;
-  background: #04f1a2;
+  background: #1bd095;
   float: right;
   margin-top: 20px;
 }
@@ -459,7 +456,7 @@ div #profile-about{
   color: #4b4b4b;
 }
 
-/* FINED ABOUT */
+/* FIN ABOUT */
 
 
 /* EXPERIENCE */
@@ -497,6 +494,8 @@ div #profile-about{
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  border-style:hidden;
+  box-shadow: #252934;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -520,7 +519,8 @@ div #profile-about{
 }
 
 .exp-inside.exp-show-more button {
-  border: 1px solid white;
+  border: 1px solid rgb(243, 239, 239);
+  border-radius: 2px 7px;
   padding: 10px;
   background: transparent;
 }
@@ -530,8 +530,8 @@ div #profile-about{
 }
 
 .project-tech {
-  font-size: 17px;
-  color: #49da2c;
+  font-size: 19px;
+  color: #09d8f3;
 }
 
 .projects-picker span span.active {
@@ -551,7 +551,7 @@ div #profile-about{
 }
 
 .projects-picker span span:hover {
-  color: #fd5f5f;
+  color: #0adf2d;
 }
 
 .projects-picker span span {
@@ -559,7 +559,7 @@ div #profile-about{
   margin-right: 20px;
 }
 
-/* FINE EXPERIENCE */
+/* FIN EXPERIENCE */
 
 /* SERVICES */
 
@@ -574,7 +574,7 @@ div #profile-about{
 }
 
 #services #services-wrapper {
-  color: white;
+  color: rgb(250, 246, 246);
   margin-top: 50px;
 }
 
@@ -585,22 +585,22 @@ div #profile-about{
 
 #services svg {
   width: 70px;
-  fill: white;
+  fill: rgb(255, 254, 254);
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 #services svg.light:hover {
-  fill: rgb(255, 241, 49);
+  fill: rgb(245, 4, 4);
 }
 
 #services svg.frontend:hover {
-  fill: rgb(49, 255, 193);
+  fill: rgba(244, 248, 3, 0.89);
 }
 
 #services svg.backend:hover {
-  fill: rgb(255, 97, 49);
+  fill: rgb(11, 248, 3);
 }
 
 /* FIN SERVICES */
@@ -627,7 +627,7 @@ div #profile-about{
 #blog .box {
   display: inline-block;
   padding: 0;
-  background-color: white;
+  background-color: rgb(231, 227, 227);
   border-radius: 20px;
   padding-bottom: 5px;
   height: 500px;
@@ -651,7 +651,7 @@ div #profile-about{
 }
 
 #blog .box a {
-  color: orangered;
+  color: rgb(64, 204, 9);
 }
 
 .blog-description {
@@ -704,7 +704,7 @@ div #profile-about{
 }
 
 #contact .github-svg-logo:hover {
-  fill: white;
+  fill:#28fa03;
 }
 
 #contact textarea {
@@ -712,7 +712,7 @@ div #profile-about{
 }
 
 #contact .custom-hr {
-  background-color: white;
+  background-color: #08f71c;
 }
 
 @media screen and (max-width: 1000px) {
@@ -734,16 +734,14 @@ button#send-contact-form {
 }
 
 button#send-contact-form:hover {
-  background: #2c6921;
+  background: #28fa03;
 }
 
 /* FIN CONTACT */
-.coffee{
-  align-items: center;
-}
+
 footer {
   background: #1B242F;
-  color: #fff;
+  color: rgb(250, 243, 243);
   height: 75px;
   padding: 25px;
   font-size: 17px;
