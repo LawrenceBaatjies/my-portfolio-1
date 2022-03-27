@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: #1bd095;
+}
+
 html, body {
   height: 100%;
 }
@@ -87,9 +91,9 @@ p {
 }
 
 .custom-hr {
-  width: 70px;
-  height: 4px;
-  background: #08f127;
+  width: 90px;
+  height: 5px;
+  background: var(--main-bg-color);
   text-align: center;
   margin: 0 auto;
 }
@@ -172,12 +176,11 @@ header .show-more a {
   padding: 10px;
   color: white;
   border: 1px solid white;
-  border-radius: 5px;
 }
 
 header .show-more a:hover {
   color: white;
-  border-color:#1bd095;
+  border-color:var(--main-bg-color);
   border-radius: 3px 7px;
   text-decoration: none;
 }
@@ -192,17 +195,17 @@ header .show-more a:hover {
     margin: auto;
     width: 100%;
     z-index: 9999;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px;
+    box-shadow: var(--main-bg-color) 0px 2px 10px;
   }
 /* About navbar */
 
   nav {
-    background: #111111f7;
+    background: #1a1818f7;
     height: 80px;
   }
 
   nav .logo {
-    padding: 19px;
+    padding: 20px;
   }
 
   nav ul {
@@ -226,11 +229,11 @@ header .show-more a:hover {
 
   nav ul li a:hover {
     text-decoration: none;
-    color: #4cf808;
+    color: var(--main-bg-color);
   }
 
   nav ul li a:focus {
-    color: #18da62;
+    color: #29f800;
     text-decoration: none;
   }
 
@@ -257,7 +260,7 @@ header .show-more a:hover {
     z-index: 100;
     width: 60px;
     height: 60px;
-    background: #18da62;
+    background: var(--main-bg-color);
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
@@ -275,7 +278,7 @@ header .show-more a:hover {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: #fff;
+    background: var(--main-bg-color);
     display: block;
     -webkit-transform-origin: center;
             transform-origin: center;
@@ -350,7 +353,7 @@ header .show-more a:hover {
   }
 
   label.hamburguer-menu a:hover {
-    color: #fd5f5f;
+    color: var(--main-bg-color);
   }
 }
 
@@ -397,18 +400,21 @@ header .show-more a:hover {
 
 .top-hr {
   margin-bottom: 20px;
-  width: 300px;
-  height: 7px;
-  background: #1bd095;
+  width: 280px;
+  height: 9px;
+  background: var(--main-bg-color);
   float: left;
+  border-radius: 1px 5px 1px;
 }
 
 .bottom-hr {
-  width: 300px;
-  height: 7px;
-  background: #1bd095;
+  width: 280px;
+  height: 9px;
+  background: var(--main-bg-color);
   float: right;
   margin-top: 20px;
+  border-radius: 1px 5px 1px;
+  
 }
 
 @media screen and (max-width: 920px) {
@@ -454,7 +460,7 @@ div #profile-about{
 }
 
 #about p {
-  color: #4b4b4b;
+  color: #0c0c0c;
 }
 
 /* FIN ABOUT */
@@ -495,7 +501,7 @@ div #profile-about{
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  /* border-style:hidden; */
+  border-style:hidden;
   box-shadow: #252934;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -536,7 +542,7 @@ div #profile-about{
 }
 
 .projects-picker span span.active {
-  color: #fd5f5f;
+  color: var(--main-bg-color);
 }
 
 @media screen and (min-width: 400px) {
@@ -552,7 +558,8 @@ div #profile-about{
 }
 
 .projects-picker span span:hover {
-  color: #0adf2d;
+  color: #011a15c9;
+  box-shadow: #63c053 0px 1px 10px;
 }
 
 .projects-picker span span {
@@ -620,7 +627,7 @@ div #profile-about{
 }
 
 #blog, #experience {
-  background: #f3f3f3;
+  background: #dfdfdf;
 }
 
 
@@ -652,7 +659,7 @@ div #profile-about{
 }
 
 #blog .box a {
-  color: rgb(64, 204, 9);
+  color: rgb(0, 0, 0);
 }
 
 .blog-description {
@@ -695,8 +702,8 @@ div #profile-about{
 }
 
 #contact .contact-logo {
-  width: 42px;
-  height: 30px;
+  width: 40px;
+  height: 50px;
   margin-right: 10px;
 }
 
@@ -713,7 +720,8 @@ div #profile-about{
 }
 
 #contact .custom-hr {
-  background-color: #08f71c;
+  background-color: #1bd095;
+  ;
 }
 
 @media screen and (max-width: 1000px) {
@@ -726,32 +734,31 @@ div #profile-about{
   color: white;
   background: #1E242C;
   border: 1px solid #27283c;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 button#send-contact-form {
-  background: #3a882c;
+  background: var(--main-bg-color);
+  ;
   border-color: transparent;
 }
 
 button#send-contact-form:hover {
-  background: #28fa03;
+  background: rgb(12, 248, 4);
 }
 
 /* FIN CONTACT */
 
-
-
 footer {
   background: #1B242F;
-  color: rgb(155, 219, 150);
+  color: rgb(247, 245, 245);
   height: 75px;
-  padding: 25px;
-  font-size: 17px;
+  padding: 18px;
+  font-size: 20px;
 }
 
 footer p {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -785,7 +792,7 @@ footer p {
 .modal #btnclose {
   float: right;
   border: none;
-  color: #ff6464;
+  color: var(--main-bg-color);
 }
 
 .modal .item img {
@@ -800,10 +807,44 @@ footer p {
 }
 
 .info-tech {
-  color: #ff6464;
+  color: var(--main-bg-color);
 }
 
 .modal-visit {
   margin-left: 10px;
   font-size: 15px;
 }
+
+/* .rotateing180{
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+   
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+   
+  overflow:hidden;
+
+  }  
+
+  .rotateimg180:hover  
+{
+  transform: matrix();
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}  
+
+.log-spinner{
+   
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+} */
